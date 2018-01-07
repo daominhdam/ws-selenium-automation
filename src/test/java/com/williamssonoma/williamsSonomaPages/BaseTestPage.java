@@ -1,18 +1,16 @@
 package com.williamssonoma.williamsSonomaPages;
 
 import com.google.common.base.Function;
+import com.williamssonoma.automationCore.util.VerificationService.Verifications;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class BaseTestPage {
+public class BaseTestPage extends Verifications{
 	public static WebDriverWait wait;
 	public static WebDriver driver;
 
@@ -64,5 +62,13 @@ public class BaseTestPage {
 			}
 		});
 	}
+	public void waitForPageToLoad() {
+		(new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver d) {
+				return (((org.openqa.selenium.JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete"));
+			}
+		});
+	}
+
 	}
 

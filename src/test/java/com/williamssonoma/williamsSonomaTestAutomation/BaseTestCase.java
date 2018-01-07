@@ -1,28 +1,20 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
-import java.io.File;
-import java.io.IOException;
-
+import com.williamssonoma.automationBaseClasses.BrowserDriver;
+import com.williamssonoma.automationBaseClasses.CreateBrowser;
+import com.williamssonoma.automationCore.Reporter.ExtentReportsGenerator;
+import com.williamssonoma.automationCore.util.VerificationService.Verifications;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
-import com.williamssonoma.automationBaseClasses.BrowserDriver;
-import com.williamssonoma.automationBaseClasses.CreateBrowser;
-import com.williamssonoma.williamsSonomaPages.BaseTestPage;
+import java.io.File;
+import java.io.IOException;
 
-public class BaseTestCase {
+public class BaseTestCase extends Verifications {
 	public static WebDriver driver;
 	@BeforeSuite
 	public void beforeSuite() throws IOException{
@@ -45,6 +37,8 @@ public class BaseTestCase {
 	public void afterClass(){
 		driver.quit();
 	}
+
+
 	@BeforeMethod
 	public void beforeMethod(){
 	

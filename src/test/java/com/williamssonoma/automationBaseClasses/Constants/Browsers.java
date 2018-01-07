@@ -2,7 +2,11 @@ package com.williamssonoma.automationBaseClasses.Constants;
 
 public enum Browsers {
 	CHROME,
-	SAFARI;
+	FIREFOX,
+	IE,
+	PHANTOMJS;
+
+
 
 	public static Browsers browserForName(String browser) throws IllegalArgumentException{
         for(Browsers b: values()){

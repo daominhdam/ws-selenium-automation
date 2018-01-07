@@ -51,7 +51,7 @@ public class BrowserDriver {
         getCurrentDriver().get(url);
     }
 
-    public static void reopenAndLoadPage(String url) {
+    public static void refreshPage(String url) {
         mDriver = null;
         getCurrentDriver();
         loadPage(url);
