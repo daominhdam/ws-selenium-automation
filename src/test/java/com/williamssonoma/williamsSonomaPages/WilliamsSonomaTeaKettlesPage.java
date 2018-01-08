@@ -19,6 +19,8 @@ public class WilliamsSonomaTeaKettlesPage extends BaseTestPage{
 	@FindBy(xpath="//h1[text()='Tea Kettles']")
 	public WebElement headerTeaKettles;
 
+	public By headerTeaKettlesLocator= By.xpath("//h1[text()='Tea Kettles']");
+
 	@FindBy(xpath="//div[@id='subCatListContainer']/ul[@data-subcategory='Tea Kettles']")
 	public List<WebElement> linksAllTeaKettles;
 

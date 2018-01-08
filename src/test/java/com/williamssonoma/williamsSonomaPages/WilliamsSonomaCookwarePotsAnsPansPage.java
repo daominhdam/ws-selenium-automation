@@ -1,8 +1,6 @@
 package com.williamssonoma.williamsSonomaPages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.williamssonoma.williamsSonomaPages.BaseTestPage;
@@ -16,6 +14,8 @@ public class WilliamsSonomaCookwarePotsAnsPansPage extends BaseTestPage{
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
+
+
 
 	@FindBy(xpath="//h1[text()='Cookware']")
 	public WebElement headerCookware;
@@ -35,16 +35,35 @@ public class WilliamsSonomaCookwarePotsAnsPansPage extends BaseTestPage{
 	@FindBy(xpath="//a[contains(@class, 'stickyOverlayMinimizeButton')]")
 	public WebElement buttonStickyOverlayMinimize ;
 
+
+	public By menuShopByCategoryLocator = By.xpath("//div[@class='left-nav-cat-heading'][text()='Shop by Category']");
+
 	public void clickMenuShopByCategory(String productName){
 		for (WebElement link : linksAllProductsShopByCategory)
 		{
 			WebElement productLink= link.findElement(By.tagName("a"));
 			if (productLink.getText().trim().equals(productName))
 			{
-				productLink.click(); // click the desired option
+				try {
+					((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productLink);
+					waitForElementToBeVisible(By.tagName("a"));
+					if (productLink.isDisplayed())
+						productLink.click(); // click the desired option
+				}catch(WebDriverException we){
+					String url=productLink.getAttribute("href");
+					System.out.println("Navigating to: "+url );
+					driver.navigate().to(url);
+			   }catch(Exception e){
+					e.printStackTrace();
+				}
 				break;
 			}
 		}
+	}
+
+	public void waitForPageToLoad(){
+		waitForElementToBeVisible(By.xpath("//h1[text()='Cookware']"));
+		waitForElementToBeVisible(By.xpath("//div[@class='left-nav-cat-heading'][text()='Shop by Category']"));
 	}
 
 

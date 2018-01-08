@@ -1,6 +1,7 @@
 package com.williamssonoma.automationCore.util;
 
 import com.williamssonoma.automationBaseClasses.BrowserDriver;
+import com.williamssonoma.automationCore.Exceptions.ScreenShotException;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -23,38 +24,19 @@ public class GetScreenShot {
         return dest;
     }
 
+    public static void captureScreenshot(WebDriver driver,String screenshotName)
+    {
+        try
+        {
+            TakesScreenshot ts=(TakesScreenshot)driver;
+            File source=ts.getScreenshotAs(OutputType.FILE);
+            FileUtils.copyFile(source, new File("./screenshots/"+screenshotName+".png"));
 
-    public static String captureScreenShotInCaseOfFailure(ITestResult result) {
-
-            String screenShotFolder = "screenshots";
-            File screenShotTargetFile=null;
-            if (!result.isSuccess()) {
-                File screenShotSourceFile = ((TakesScreenshot) BrowserDriver.getCurrentDriver()).getScreenshotAs(OutputType.FILE);
-                try {
-                    createFolder(screenShotFolder);
-                    String screenshotFileName = result.getMethod().getMethodName();
-                    screenShotTargetFile = getTargetFile(screenShotFolder, screenshotFileName, "png");
-                    FileUtils.copyFile(screenShotSourceFile, screenShotTargetFile);
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        return screenShotTargetFile != null ? screenShotTargetFile.getPath() : null;
-
+            System.out.println("Screenshot taken");
+        }
+        catch (Exception e) {
+           throw new ScreenShotException(e);
+        }
     }
-
-
-
-    private static void createFolder(String folderName) throws IOException {
-        if (!(new File(folderName).exists())) new File(folderName).mkdir();
-    }
-
-    private static File getTargetFile(String folderName, String fileName, String ext) throws IOException {
-        String rootPath = new File(".").getCanonicalPath();
-        String fullPath = String.format("%s//%s//%s.%s", rootPath, folderName, fileName, ext);
-        return new File(fullPath);
-    }
-
 
 }

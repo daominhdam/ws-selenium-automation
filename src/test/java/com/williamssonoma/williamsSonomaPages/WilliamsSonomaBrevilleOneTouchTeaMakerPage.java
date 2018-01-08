@@ -1,5 +1,6 @@
 package com.williamssonoma.williamsSonomaPages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,9 +18,10 @@ public class WilliamsSonomaBrevilleOneTouchTeaMakerPage extends BaseTestPage{
 	public WebElement headerBrevilleOneTouchTeaKettles;
 
 
-	@FindBy(xpath="//button[contains(@class, 'btn_addtobasket')]/span[text()='Add to Cart']")
+	@FindBy(xpath="//button[contains(@class, 'btn_addtobasket')]")
 	public WebElement buttonShoppingCart;
 
+	public By buttonShoppingCartLocator = By.xpath("//button[contains(@class, 'btn_addtobasket')]");
 
 
 

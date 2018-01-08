@@ -1,11 +1,9 @@
 package com.williamssonoma.williamsSonomaPages;
 
+import Logger.Log;
 import com.google.common.base.Function;
 import com.williamssonoma.automationCore.util.VerificationService.Verifications;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.*;
 
 import java.util.concurrent.TimeUnit;
@@ -50,7 +48,7 @@ public class BaseTestPage extends Verifications{
 		return find(locator).isDisplayed();
 	}
 
-	public static WebElement waitForPresenceOfTheElement(final By elementIdentifier) {
+	public WebElement waitForElementToBeVisible(final By elementIdentifier) {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(30, TimeUnit.SECONDS)
 				.pollingEvery(1, TimeUnit.SECONDS)
@@ -62,6 +60,41 @@ public class BaseTestPage extends Verifications{
 			}
 		});
 	}
+
+	public Boolean isElementPresent(By targetElement) throws InterruptedException{
+		Boolean isPresent = driver.findElements(targetElement).size() > 0;
+		return isPresent;
+	}
+
+	public boolean isAlertPresent(){
+		try	{
+			WebDriverWait wait = new WebDriverWait(driver, 30);
+			wait.until(ExpectedConditions.alertIsPresent());
+			driver.switchTo().alert();
+			return true;
+		}
+		catch (NoAlertPresentException e){
+			throw new NoAlertPresentException();
+		}
+	}
+
+	public static void clickWebElement(WebElement weElement, WebDriver wdDriver) {
+
+     // Scroll the browser to the element's Y position
+     ((JavascriptExecutor) wdDriver).executeScript("window.scrollTo(0,"+ weElement.getLocation().y + ")");
+     // Click the element
+      int iAttempts = 0;
+      while (iAttempts < 5) {
+         try {
+            weElement.click();
+             break;
+             } catch (Exception e) {
+             }
+             iAttempts++;
+      }
+
+     }
+
 	public void waitForPageToLoad() {
 		(new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
 			public Boolean apply(WebDriver d) {
@@ -70,5 +103,18 @@ public class BaseTestPage extends Verifications{
 		});
 	}
 
+	public void waitForPageToLoad(String PageName) {
+		String pageLoadStatus;
+		JavascriptExecutor js;
+		do {
+			js = (JavascriptExecutor) driver;
+			pageLoadStatus = (String)js.executeScript("return document.readyState");
+			Log.info(".");
+		} while ( !pageLoadStatus.equals("complete") );
+		Log.info(PageName + " page loaded successfully");
+
 	}
+
+
+}
 

@@ -62,7 +62,7 @@ public class WilliamsSonomaMainPage extends BaseTestPage{
 	}
 
 	public void waitForPageToLoad(){
-		waitForPresenceOfTheElement(By.id("topnav-container"));
+		waitForElementToBeVisible(By.id("topnav-container"));
 	}
 
 
