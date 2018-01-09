@@ -2,11 +2,15 @@ package com.williamssonoma.williamsSonomaPages;
 
 import Logger.Log;
 import com.google.common.base.Function;
-import com.williamssonoma.automationCore.util.VerificationService.Verifications;
+import com.williamssonoma.automationCore.util.verificationServices.Verifications;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
 import java.util.concurrent.TimeUnit;
+
+import static java.lang.String.format;
 
 public class BaseTestPage extends Verifications{
 	public static WebDriverWait wait;
@@ -66,6 +70,25 @@ public class BaseTestPage extends Verifications{
 		return isPresent;
 	}
 
+	public boolean isClickable(WebElement el) {
+		if (el == null) {
+			return false;
+		}
+		try {
+			if (!el.isDisplayed()) { //If not visible, element isn't clickable
+				return false;
+			}
+			if (el.getSize().getHeight() <= 0 || el.getSize().getWidth() <= 0) { // If width or height is 0, element is not clickable
+				return false;
+			}
+		} catch (Exception e) {
+			return false;
+		}
+		return true;
+	}
+
+
+
 	public boolean isAlertPresent(){
 		try	{
 			WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -94,6 +117,53 @@ public class BaseTestPage extends Verifications{
       }
 
      }
+
+	public void clickOnElementUsingJs(By element){
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
+	}
+
+	public void clickOnElementUsingAction(WebElement element) {
+		Actions builder= new Actions(driver);
+
+		Action clickElement = builder.moveToElement(element).sendKeys(Keys.ENTER).build();
+		clickElement.perform();
+	}
+
+	public void scrollIntoViewElementUsingJs(WebElement element){
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+
+	public void scrollIntoView(WebElement el) {
+		int scrollHeight = getWindowInnerHeight();
+		int y = Math.max(0, el.getLocation().getY() - scrollHeight / 2); //Subtract half the window height so its in the middle of the viewable area.
+		executeJavascript(format("window.scrollTo(%d, %d)", 0, y));
+
+	}
+
+	private int getWindowInnerHeight() {
+		Object innerHeight = executeJavascript(
+				"return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;");
+		if (!(innerHeight instanceof Long)) {
+			Log.info("Error getting the inner height, a null value was returned from Javascript. Using outer window height.");
+			return driver.manage().window().getSize().getHeight();
+		}
+		return ((Long) innerHeight).intValue();
+	}
+
+	public Object executeJavascript(String script) {
+		Log.info("Executing javascript: '{}'"+ script);
+		try {
+			return ((JavascriptExecutor) driver).executeScript(script);
+		} catch (Exception e) {
+			throw new RuntimeException(format("Exception executing Javascript '%s':", script), e);
+		}
+
+	}
+
+
+
 
 	public void waitForPageToLoad() {
 		(new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {

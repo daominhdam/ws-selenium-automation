@@ -1,7 +1,6 @@
 com\williamssonoma\williamsSonomaPages\WilliamsSonomaTeaKettlesPage.class
 com\williamssonoma\automationCore\Exceptions\ScreenShotException.class
 com\williamssonoma\automationBaseClasses\BrowserDriver$1.class
-com\williamssonoma\automationCore\Reporter\ExtentManager.class
 com\williamssonoma\automationBaseClasses\Constants\Browsers.class
 com\williamssonoma\williamsSonomaPages\WilliamsSonomaBrevilleOneTouchTeaMakerPage.class
 com\williamssonoma\williamsSonomaPages\BaseTestPage$1.class
@@ -11,14 +10,13 @@ com\williamssonoma\automationCore\util\VerificationService\Verifications.class
 com\williamssonoma\williamsSonomaTestAutomation\WilliamsSonomaCookwareShoppingCartTests.class
 com\williamssonoma\automationBaseClasses\BrowserDriver.class
 com\williamssonoma\williamsSonomaPages\BaseTestPage.class
-com\williamssonoma\automationCore\Reporter\ExtentReportsGenerator.class
 com\williamssonoma\williamsSonomaPages\WilliamsSonomaCommonPageComponents\PopupOverlayJoinEmailListWidgetComponent.class
 com\williamssonoma\automationCore\util\VerificationService\TestMethodListener.class
 com\williamssonoma\williamsSonomaPages\WilliamsSonomaCookwarePotsAnsPansPage.class
 com\williamssonoma\williamsSonomaPages\WilliamsSonomaEmptyShoppingCartPage.class
 com\williamssonoma\williamsSonomaPages\WilliamsSonomaMainPage.class
 com\williamssonoma\williamsSonomaTestAutomation\BaseTestCase.class
-com\williamssonoma\automationCore\Exceptions\VerificationError.class
+com\williamssonoma\automationCore\util\VerificationService\VerificationError.class
 com\williamssonoma\automationCore\util\GetScreenShot.class
 com\williamssonoma\automationCore\util\VerificationService\TestMethodErrorBuffer.class
 Logger\Log.class

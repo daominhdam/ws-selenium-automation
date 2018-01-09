@@ -1,69 +1,61 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
 
-import java.util.List;
-
-import Logger.Log;
-import com.williamssonoma.williamsSonomaPages.WilliamsSonomaBrevilleOneTouchTeaMakerPage;
-import com.williamssonoma.williamsSonomaPages.WilliamsSonomaCookwarePotsAnsPansPage;
-import com.williamssonoma.williamsSonomaPages.WilliamsSonomaMainPage;
-import com.williamssonoma.williamsSonomaPages.WilliamsSonomaTeaKettlesPage;
-import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import com.williamssonoma.williamsSonomaPages.*;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-import Logger.Log;
 
 public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 	
 
 	@Test ()
     public void verifyProductSavedForLater() throws InterruptedException {
+		Reporter.log("Launching Williams Sonoma Main Page");
 		WilliamsSonomaMainPage williamsSonomaMainPage= new WilliamsSonomaMainPage(driver);
 		williamsSonomaMainPage.launchPage();
-		Thread.sleep(1000);
 
-        if(driver.getPageSource().contains(""))
-		if (williamsSonomaMainPage.popupOverlayWidget.isDisplayed()) {
-			Log.info("Closing the 'JoinEmailList' popup overlay widget");
-			williamsSonomaMainPage.buttonStickyOverlayMinimize.click();
-			}
-		williamsSonomaMainPage.waitForPageToLoad();
-
-		Reporter.log("Navigating to Cookware Page");
+		Reporter.log("Clicking on Cookware link from the Menu");
 		williamsSonomaMainPage.clickProductLinkFromMenu("Cookware");
 
+		Reporter.log("Navigating to Cookware Page");
 		WilliamsSonomaCookwarePotsAnsPansPage williamsSonomaCookwarePage= new WilliamsSonomaCookwarePotsAnsPansPage(driver);
 		williamsSonomaCookwarePage.waitForPageToLoad();
 
-		/*if(williamsSonomaCookwarePage.popupOverlayWidget.isDisplayed()) {
-			williamsSonomaCookwarePage.buttonStickyOverlayMinimize.click();
-		}*/
-
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", williamsSonomaCookwarePage.menuShopByCategory);
-
+		Reporter.log("Clicking on the menu Tea kettle");
+		williamsSonomaCookwarePage.scrollIntoViewElementUsingJs(williamsSonomaCookwarePage.menuShopByCategory);
 		williamsSonomaCookwarePage.clickMenuShopByCategory("Tea Kettles");
+
+		Reporter.log("Navigating to Tea Kettles Page");
 		WilliamsSonomaTeaKettlesPage williamsSonomaTeaKettlesPage=new WilliamsSonomaTeaKettlesPage(driver);
 		williamsSonomaTeaKettlesPage.waitForPageToLoad();
 		williamsSonomaTeaKettlesPage.waitForElementToBeVisible(williamsSonomaTeaKettlesPage.headerTeaKettlesLocator);
 		verifyTrue(williamsSonomaTeaKettlesPage.headerTeaKettles.isDisplayed(), "Tea Kettle page header is displayed");
 
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", williamsSonomaTeaKettlesPage.linksAllTeaKettles.get(0));
-
+		Reporter.log("Clicking on a Tea Kettle Product from the Tea Kettles page");
+		williamsSonomaTeaKettlesPage.scrollIntoViewElementUsingJs(williamsSonomaTeaKettlesPage.linksAllTeaKettles.get(0));
 		williamsSonomaTeaKettlesPage.linksAllTeaKettles.get(0).click();
 
+		Reporter.log("Navigating to the Tea Kettle product Page");
 		WilliamsSonomaBrevilleOneTouchTeaMakerPage brevilleOneTouchTeaMakerPage =new WilliamsSonomaBrevilleOneTouchTeaMakerPage(driver);
 		brevilleOneTouchTeaMakerPage.waitForPageToLoad();
+
+		Reporter.log("Clicking on 'Add to Cart' button");
 		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.buttonShoppingCartLocator);
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", brevilleOneTouchTeaMakerPage.buttonShoppingCart);
-		brevilleOneTouchTeaMakerPage.buttonShoppingCart.click();
+		brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
+		brevilleOneTouchTeaMakerPage.clickOnElementUsingAction(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
+		//brevilleOneTouchTeaMakerPage.clickOnElementUsingJs(brevilleOneTouchTeaMakerPage.buttonShoppingCartLocator);
+
+		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.widgetConfirmationOverlayLocator);
+		brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.widgetCheckoutConfirmationOverlay.buttonCheckout);
+
+		Reporter.log("Clicking on Checkout button on the confirmation overlay widget");
+		brevilleOneTouchTeaMakerPage.widgetCheckoutConfirmationOverlay.buttonCheckout.click();
+		WilliamsSonomaShoppingCartPage shoppingCartPage= new WilliamsSonomaShoppingCartPage(driver);
+		shoppingCartPage.waitForPageToLoad();
+		verifyTrue(shoppingCartPage.getProductsListFromShoppingCartTable().contains("Breville One-Touch Tea Maker"),"Expected productName is displayed in the shopping cart");
+
+
 
 	}
-
 
 
 } 

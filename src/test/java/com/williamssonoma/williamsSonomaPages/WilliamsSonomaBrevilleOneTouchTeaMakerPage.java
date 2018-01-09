@@ -1,5 +1,7 @@
 package com.williamssonoma.williamsSonomaPages;
 
+import com.williamssonoma.automationCore.webElements.WSWebElement;
+import com.williamssonoma.williamsSonomaPages.WilliamsSonomaCommonPageComponents.WilliamsSonomaCheckoutConfirmationOverlayWidget;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,11 +21,15 @@ public class WilliamsSonomaBrevilleOneTouchTeaMakerPage extends BaseTestPage{
 
 
 	@FindBy(xpath="//button[contains(@class, 'btn_addtobasket')]")
-	public WebElement buttonShoppingCart;
+	public WSWebElement buttonShoppingCart;
 
 	public By buttonShoppingCartLocator = By.xpath("//button[contains(@class, 'btn_addtobasket')]");
 
+    @FindBy(xpath="//div[@id='racOverlay']")
+    public WebElement widgetConfirmationOverlay;
+    public By widgetConfirmationOverlayLocator = By.xpath("//div[@id='racOverlay']\"");
 
-
+    @FindBy(xpath="//div[@id='racOverlay']")
+    public WilliamsSonomaCheckoutConfirmationOverlayWidget widgetCheckoutConfirmationOverlay;
 
 }

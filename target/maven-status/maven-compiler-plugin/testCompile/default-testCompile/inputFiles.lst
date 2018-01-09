@@ -1,6 +1,5 @@
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\util\GetScreenShot.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationBaseClasses\BrowserDriver.java
-C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\Reporter\ExtentReportsGenerator.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\williamsSonomaPages\WilliamsSonomaShoppingCartPage.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\util\VerificationService\Verifications.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationBaseClasses\CreateBrowser.java
@@ -13,11 +12,10 @@ C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\util\LoadProperties.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\williamsSonomaPages\WilliamsSonomaCookwarePotsAnsPansPage.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\Exceptions\ScreenShotException.java
-C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\Reporter\ExtentManager.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\util\VerificationService\TestMethodErrorBuffer.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\williamsSonomaPages\WilliamsSonomaBrevilleOneTouchTeaMakerPage.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\williamsSonomaPages\WilliamsSonomaCommonPageComponents\PopupOverlayJoinEmailListWidgetComponent.java
-C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\Exceptions\VerificationError.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\Logger\Log.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationBaseClasses\Constants\Browsers.java
+C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\automationCore\util\VerificationService\VerificationError.java
 C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\src\test\java\com\williamssonoma\williamsSonomaTestAutomation\WilliamsSonomaCookwareShoppingCartTests.java

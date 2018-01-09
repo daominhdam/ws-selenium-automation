@@ -1,4 +1,4 @@
-package com.williamssonoma.automationCore.Exceptions;
+package com.williamssonoma.automationCore.exceptions;
 
 public class ScreenShotException extends RuntimeException {
 

@@ -1,5 +1,6 @@
 package com.williamssonoma.williamsSonomaPages;
 
+import Logger.Log;
 import com.williamssonoma.automationCore.util.LoadProperties;
 import com.williamssonoma.williamsSonomaPages.WilliamsSonomaCommonPageComponents.PopupOverlayJoinEmailListWidgetComponent;
 import org.openqa.selenium.By;
@@ -58,6 +59,12 @@ public class WilliamsSonomaMainPage extends BaseTestPage{
 		String baseurl= prop.getProperty("baseurl");
 		driver.get(baseurl);
 		waitForPageToLoad();
+		WilliamsSonomaMainPage williamsSonomaMainPage= new WilliamsSonomaMainPage(driver);
+		williamsSonomaMainPage.waitForPageToLoad();
+		if (williamsSonomaMainPage.popupOverlayWidget.isDisplayed()) {
+			Log.info("Closing the 'JoinEmailList' popup overlay widget");
+			williamsSonomaMainPage.buttonStickyOverlayMinimize.click();
+		}
 		driver.manage().window().maximize();
 	}
 

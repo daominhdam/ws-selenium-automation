@@ -1,4 +1,4 @@
-package com.williamssonoma.automationCore.util.VerificationService;
+package com.williamssonoma.automationCore.util.verificationServices;
 
 import java.util.List;
 

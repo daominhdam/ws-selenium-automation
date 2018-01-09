@@ -1,9 +1,8 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
-import com.williamssonoma.automationBaseClasses.BrowserDriver;
 import com.williamssonoma.automationBaseClasses.CreateBrowser;
 import com.williamssonoma.automationCore.util.GetScreenShot;
-import com.williamssonoma.automationCore.util.VerificationService.Verifications;
+import com.williamssonoma.automationCore.util.verificationServices.Verifications;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -48,7 +47,10 @@ public class BaseTestCase extends Verifications {
 	}
 	@AfterTest()
 	 public void teardown(){
-		BrowserDriver.getCurrentDriver().close();
+		if(driver==null) {
+			driver.close();
+		}
+
 		}
 	
 
