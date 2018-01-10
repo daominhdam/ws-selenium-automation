@@ -18,6 +18,7 @@ public class ScreenshotListener extends TestListenerAdapter {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
         String methodName = result.getName();
+        driver = (WebDriver) result.getTestContext().getAttribute("WebDriver");
         if(!result.isSuccess()){
             File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             try {

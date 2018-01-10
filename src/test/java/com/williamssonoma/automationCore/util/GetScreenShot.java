@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 import java.io.File;
 import java.io.IOException;
- 
+
 public class GetScreenShot {
      
     public static String capture(WebDriver driver,String screenShotName) throws IOException
@@ -36,5 +36,8 @@ public class GetScreenShot {
            throw new ScreenShotException(e);
         }
     }
+
+
+
 
 }

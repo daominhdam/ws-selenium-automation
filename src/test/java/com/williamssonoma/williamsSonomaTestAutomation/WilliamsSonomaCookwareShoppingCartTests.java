@@ -1,8 +1,11 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
 import com.williamssonoma.williamsSonomaPages.*;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
+
+import static com.williamssonoma.automationCore.util.verificationServices.Verifications.verifyTrue;
 
 public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 	
@@ -14,6 +17,7 @@ public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 		williamsSonomaMainPage.launchPage();
 
 		Reporter.log("Clicking on Cookware link from the Menu");
+		williamsSonomaMainPage.scrollIntoView(williamsSonomaMainPage.linkCookware);
 		williamsSonomaMainPage.clickProductLinkFromMenu("Cookware");
 
 		Reporter.log("Navigating to Cookware Page");
@@ -40,9 +44,10 @@ public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 
 		Reporter.log("Clicking on 'Add to Cart' button");
 		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.buttonShoppingCartLocator);
+		((JavascriptExecutor)driver).executeScript("window.scrollBy(400,600)", "");
+		//brevilleOneTouchTeaMakerPage.clickOnElementUsingAction(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
 		brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
-		brevilleOneTouchTeaMakerPage.clickOnElementUsingAction(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
-		//brevilleOneTouchTeaMakerPage.clickOnElementUsingJs(brevilleOneTouchTeaMakerPage.buttonShoppingCartLocator);
+        brevilleOneTouchTeaMakerPage.buttonShoppingCart.click();
 
 		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.widgetConfirmationOverlayLocator);
 		brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.widgetCheckoutConfirmationOverlay.buttonCheckout);

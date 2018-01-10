@@ -3,9 +3,7 @@ package com.williamssonoma.williamsSonomaPages;
 import Logger.Log;
 import com.williamssonoma.automationCore.util.LoadProperties;
 import com.williamssonoma.williamsSonomaPages.WilliamsSonomaCommonPageComponents.PopupOverlayJoinEmailListWidgetComponent;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -29,7 +27,7 @@ public class WilliamsSonomaMainPage extends BaseTestPage{
 	@FindBy(xpath="//nav[@id='topnav-container']")
 	List<WebElement> menuBarAllProduct;
 
-	@FindBy(xpath="//ul[@class='nav-menu']/li")
+	@FindBy(xpath="//nav[@id='topnav-container']/ul[@class='nav-menu']/li")
 	List<WebElement> linkAllProducts;
 
 	@FindBy(xpath="//a[@class='topnav-cookware ']")
@@ -44,11 +42,23 @@ public class WilliamsSonomaMainPage extends BaseTestPage{
 	public PopupOverlayJoinEmailListWidgetComponent popupOverlayJoinEmailListWidgetComponent;
 
 	public void clickProductLinkFromMenu(String productName){
-		for (WebElement product : linkAllProducts)
-		{
-			if (product.getText().trim().equals(productName))
+		for (WebElement link : linkAllProducts){
+
+			WebElement productLink= link.findElement(By.tagName("a"));
+			if (productLink.getText().trim().equals(productName))
 			{
-				product.click(); // click the desired option
+				try {
+					((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", productLink);
+					waitForElementToBeVisible(By.tagName("a"));
+					if (productLink.isDisplayed())
+						productLink.click(); // click the desired option
+				}catch(WebDriverException we){
+					String url=productLink.getAttribute("href");
+					System.out.println("Navigating to: "+url );
+					driver.navigate().to(url);
+				}catch(Exception e){
+					e.printStackTrace();
+				}
 				break;
 			}
 		}
@@ -56,16 +66,20 @@ public class WilliamsSonomaMainPage extends BaseTestPage{
 
 	public void launchPage() {
 		LoadProperties prop = new LoadProperties();
-		String baseurl= prop.getProperty("baseurl");
+		String baseurl = prop.getProperty("baseurl");
 		driver.get(baseurl);
 		waitForPageToLoad();
-		WilliamsSonomaMainPage williamsSonomaMainPage= new WilliamsSonomaMainPage(driver);
+		WilliamsSonomaMainPage williamsSonomaMainPage = new WilliamsSonomaMainPage(driver);
 		williamsSonomaMainPage.waitForPageToLoad();
-		if (williamsSonomaMainPage.popupOverlayWidget.isDisplayed()) {
-			Log.info("Closing the 'JoinEmailList' popup overlay widget");
-			williamsSonomaMainPage.buttonStickyOverlayMinimize.click();
+		try {
+			if (williamsSonomaMainPage.popupOverlayWidget.isDisplayed()) {
+				Log.info("Closing the 'JoinEmailList' popup overlay widget");
+				williamsSonomaMainPage.buttonStickyOverlayMinimize.click();
+			}
+			driver.manage().window().maximize();
+		} catch (Exception e) {
+			Log.info("The 'JoinEmailList' popup overlay widget is not displayed ");
 		}
-		driver.manage().window().maximize();
 	}
 
 	public void waitForPageToLoad(){

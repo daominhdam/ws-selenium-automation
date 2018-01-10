@@ -2,15 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
     <listeners>
-        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
         <listener class-name="com.williamssonoma.automationCore.listeners.ScreenshotListener" />
-
+        <listener class-name="com.williamssonoma.automationCore.listeners.ExtentReporterNG" />
     </listeners>
     <test name="Test">
-        <packages>
-            <package name="com.williamssonoma.williamsSonomaTestAutomation.*" />
-        </packages>
+        <classes>
+            <class name="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests" />
+        </classes>
 
     </test> <!-- Test -->
 </suite> <!-- Suite -->
