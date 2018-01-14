@@ -41,6 +41,59 @@
 	  </dependency>
 
 	  <dependency>
+
+		  <groupId>org.uncommons</groupId>
+
+		  <artifactId>reportng</artifactId>
+
+		  <version>1.1.2</version>
+
+		  <scope>test</scope>
+
+		  <exclusions>
+
+			  <exclusion>
+
+				  <groupId>org.testng</groupId>
+
+				  <artifactId>testng</artifactId>
+
+			  </exclusion>
+
+		  </exclusions>
+
+	  </dependency>
+
+
+
+	  <dependency>
+
+		  <groupId>com.google.inject</groupId>
+
+		  <artifactId>guice</artifactId>
+
+		  <version>3.0</version>
+
+		  <scope>test</scope>
+
+	  </dependency>
+
+
+
+	  <dependency>
+
+		  <groupId>velocity</groupId>
+
+		  <artifactId>velocity</artifactId>
+
+		  <version>1.4</version>
+
+		  <scope>test</scope>
+
+	  </dependency>
+
+
+	  <dependency>
 		  <groupId>org.seleniumhq.selenium</groupId>
 		  <artifactId>selenium-java</artifactId>
 		  <version>3.0.0</version>
@@ -147,6 +200,33 @@
 		  <artifactId>xml-apis</artifactId>
 		  <version>1.4.01</version>
 	  </dependency>
+	  <dependency>
+
+		  <groupId>javax.activation</groupId>
+
+		  <artifactId>activation</artifactId>
+
+		  <version>1.1.1</version>
+
+	  </dependency>
+
+
+
+	  <dependency>
+
+		  <groupId>javax.mail</groupId>
+
+		  <artifactId>mail</artifactId>
+
+		  <version>1.4</version>
+
+	  </dependency>
+
+
+
+
+
+
 
   </dependencies>
 </project>

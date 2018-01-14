@@ -1,11 +1,8 @@
 package Logger;
 
+import org.apache.log4j.*;
+
 import java.io.IOException;
-import org.apache.log4j.ConsoleAppender;
-import org.apache.log4j.FileAppender;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PatternLayout;
 /**
  * contains all the methods to show the logs on console
  * and save the logs in LogFile.txt of each run.

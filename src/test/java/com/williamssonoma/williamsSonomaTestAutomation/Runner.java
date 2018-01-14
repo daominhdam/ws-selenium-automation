@@ -1,14 +1,13 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
+import org.testng.TestNG;
+import org.testng.annotations.Test;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
-import com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests;
-import org.testng.TestNG;
-import org.testng.annotations.Test;
 
 public class Runner {
 	@Test

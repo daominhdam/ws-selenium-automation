@@ -3,7 +3,6 @@ package com.williamssonoma.williamsSonomaPages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.williamssonoma.williamsSonomaPages.BaseTestPage;
 
 import java.util.List;
 

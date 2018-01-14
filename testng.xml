@@ -2,8 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
     <listeners>
-        <listener class-name="com.williamssonoma.automationCore.listeners.ScreenshotListener" />
+        <listener class-name="org.uncommons.reportng.HTMLReporter" />
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+        <listener class-name="com.williamssonoma.automationCore.listeners.TestListener" />
         <listener class-name="com.williamssonoma.automationCore.listeners.ExtentReporterNG" />
+        <listener class-name="com.williamssonoma.automationCore.retryAnalyzer.AnnotationTransformer" />
     </listeners>
     <test name="Test">
         <classes>

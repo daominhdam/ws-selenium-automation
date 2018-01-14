@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="ws-selenium-automation(failed)">
+    <classes>
+      <class name="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
+          <include name="teardown"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="verifyProductSavedForLater"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests -->
+    </classes>
+  </test> <!-- ws-selenium-automation(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

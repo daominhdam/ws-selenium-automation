@@ -1,20 +1,13 @@
 package com.williamssonoma.automationCore.util.waitServices;
 
-import java.util.concurrent.TimeUnit;
-
+import com.google.common.base.Predicate;
 import com.williamssonoma.automationCore.webElements.WSWebElement;
 import org.openqa.selenium.NoSuchElementException;
-
 import org.openqa.selenium.StaleElementReferenceException;
-
 import org.openqa.selenium.TimeoutException;
-
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 
-
-
-import com.google.common.base.Predicate;
+import java.util.concurrent.TimeUnit;
 
 
 
