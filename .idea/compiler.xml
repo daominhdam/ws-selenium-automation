@@ -9,10 +9,12 @@
         <module name="com.avenuecode.williamsSonomaSeleniumAutomation" />
         <module name="com.williamsSonoma.SeleniumAutomation" />
         <module name="com.williamsSonomaSeleniumAutomation" />
+        <module name="williamsSonomaSeleniumAutomation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="com.williamsSonomaSeleniumAutomation" target="1.7" />
+      <module name="williamsSonomaSeleniumAutomation" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

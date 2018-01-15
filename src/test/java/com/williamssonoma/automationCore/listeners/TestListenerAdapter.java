@@ -1,10 +1,11 @@
 package com.williamssonoma.automationCore.listeners;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 import com.williamssonoma.automationCore.extentReport.ExtentManager;
 import com.williamssonoma.automationCore.extentReport.ExtentTestManager;
 import com.williamssonoma.automationCore.util.reportngUtil.CustomReportNgUtils;
 import com.williamssonoma.automationCore.util.reportngUtil.Screenshot;
+import com.williamssonoma.williamsSonomaTestAutomation.BaseTestCase;
 import org.apache.commons.io.FileUtils;
 import org.apache.velocity.VelocityContext;
 import org.openqa.selenium.OutputType;
@@ -24,7 +25,7 @@ import java.util.Calendar;
 
 import static com.williamssonoma.automationBaseClasses.BrowserDriver.getCurrentDriver;
 
-public class TestListener extends HTMLReporter implements ITestListener, IConfigurationListener
+public class TestListenerAdapter extends HTMLReporter implements ITestListener, IConfigurationListener
 {
     protected static final CustomReportNgUtils REPORT_NG_UTILS = new CustomReportNgUtils();
     WebDriver driver=null;
@@ -43,12 +44,11 @@ public class TestListener extends HTMLReporter implements ITestListener, IConfig
 
     @Override
     public void onTestStart(ITestResult iTestResult) {
-        ExtentTestManager.startTest(iTestResult.getMethod().getMethodName(),"");
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
+
     }
 
     /** Invoked when test method (method with annotation @Test) fails. */
@@ -84,7 +84,7 @@ public class TestListener extends HTMLReporter implements ITestListener, IConfig
 
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-        ExtentTestManager.getTest().log(LogStatus.SKIP, "Test Skipped");
+
     }
 
     @Override
@@ -99,8 +99,7 @@ public class TestListener extends HTMLReporter implements ITestListener, IConfig
 
     @Override
     public void onFinish(ITestContext iTestContext) {
-        ExtentTestManager.endTest();
-        ExtentManager.getInstance().flush();
+            ExtentManager.getExtent().flush();
     }
 
     @Override

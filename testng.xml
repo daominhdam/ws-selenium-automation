@@ -4,14 +4,13 @@
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter" />
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
-        <listener class-name="com.williamssonoma.automationCore.listeners.TestListener" />
-        <listener class-name="com.williamssonoma.automationCore.listeners.ExtentReporterNG" />
-        <listener class-name="com.williamssonoma.automationCore.retryAnalyzer.AnnotationTransformer" />
-    </listeners>
-    <test name="Test">
-        <classes>
-            <class name="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests" />
-        </classes>
+     <!--<listener class-name="com.williamssonoma.automationCore.listeners.TestListener" /> -->
+    <!--<listener class-name="com.williamssonoma.automationCore.retryAnalyzer.AnnotationTransformer" /> -->
+     </listeners>
+     <test name="Test">
+         <classes>
+             <class name="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests" />
+         </classes>
 
-    </test> <!-- Test -->
+     </test> <!-- Test -->
 </suite> <!-- Suite -->

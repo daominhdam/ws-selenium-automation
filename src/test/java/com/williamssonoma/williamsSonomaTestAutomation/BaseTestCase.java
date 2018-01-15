@@ -1,19 +1,20 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.williamssonoma.automationBaseClasses.CreateBrowser;
 import com.williamssonoma.automationCore.extentReport.ExtentManager;
 import com.williamssonoma.automationCore.extentReport.ExtentTestManager;
-import com.williamssonoma.automationCore.listeners.TestListener;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.TestListenerAdapter;
 import org.testng.annotations.*;
+import com.williamssonoma.automationCore.util.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,10 +22,15 @@ import java.lang.reflect.Method;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class BaseTestCase extends TestListener {
+import static com.williamssonoma.automationCore.util.GetScreenShot.createScreenshot;
+
+public class BaseTestCase  extends TestListenerAdapter {
 	public static WebDriver driver;
 	ExtentReports extent;
-	public static ExtentTest test;
+	//public static ExtentTest test;
+	public ThreadLocal<ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
+	public ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
+
     public WebDriver getDriver() {
 		return driver;
 	}
@@ -35,14 +41,18 @@ public class BaseTestCase extends TestListener {
 
 	}
 
+	@BeforeClass
+	public synchronized void beforeClass() throws Exception {
+		ExtentTest parent = ExtentTestManager.createTest(getClass().getName());
+		parentTest.set(parent);
+		//throw new Exception("Failed ******* ");
+	}
 	
 	@BeforeTest
 	public void beforeTest(){
 		if(driver==null) {
 			driver=CreateBrowser.getBrowser();
 		}
-        extent=ExtentManager.getInstance();
-		extent.addSystemInfo("Environment", "Automation QA");
 
 	}
 	
@@ -53,10 +63,14 @@ public class BaseTestCase extends TestListener {
 
 
 	@BeforeMethod
-	public void beforeMethod(Method caller)
+	public void beforeMethod(Method method)
 	{
-		test=extent.startTest(caller.getName(), "Williams Sonoma Cookware Page Test.");
+		//test=extent.startTest(caller.getName(), "Williams Sonoma Cookware Page Test.");
+		ExtentTest child = parentTest.get().createNode(method.getName());
+		test.set(child);
+
 	}
+
 
 	@AfterMethod()
 	public void afterMethod(ITestResult result) {
@@ -75,18 +89,24 @@ public class BaseTestCase extends TestListener {
 			}
 		}
 		if (result.isSuccess()) {
-			ExtentTestManager.getTest().log(LogStatus.PASS, "Test passed");
+			ExtentTestManager.getTest().log(Status.PASS, "Test passed");
 		}
 		else if (result.getStatus() == ITestResult.FAILURE) {
-			ExtentTestManager.getTest().log(LogStatus.FAIL, "Test failed");
+			String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
+
+			try {
+				ExtentTestManager.getTest().log(Status.FAIL,result.getThrowable().toString()+
+						ExtentTestManager.getTest().addScreenCaptureFromPath(base64Screenshot));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
 		}
 		else if (result.getStatus() == ITestResult.SKIP) {
-			ExtentTestManager.getTest().log(LogStatus.SKIP, "Test skipped");
+			ExtentTestManager.getTest().log(Status.SKIP, "Test skipped");
 		}
-		extent.endTest(test);
-		test.log(LogStatus.INFO, "Calling endTest() method of ExtentReports to stop capturing information about the test log");
-		extent.flush();
-		test.log(LogStatus.INFO, "Calling flush() method of ExtentReports to push/write everything to the document");
+
+		ExtentManager.getExtent().flush();
 	}
 
 
@@ -102,7 +122,6 @@ public class BaseTestCase extends TestListener {
 	@AfterSuite
 	public void afterSuite() {
 		driver.quit();
-		extent.flush();
 	}
 
 	}

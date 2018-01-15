@@ -53,16 +53,23 @@ public class BaseTestPage extends Verifications{
 	}
 
 	public WebElement waitForElementToBeVisible(final By elementIdentifier) {
+		WebElement element=null;
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 				.withTimeout(30, TimeUnit.SECONDS)
 				.pollingEvery(1, TimeUnit.SECONDS)
 				.ignoring(NoSuchElementException.class);
 
-		return wait.until(new Function<WebDriver, WebElement>() {
-			public WebElement apply(WebDriver driver) {
-				return driver.findElement(elementIdentifier);
-			}
-		});
+		try{
+			element = wait.until(new Function<WebDriver, WebElement>() {
+				public WebElement apply(WebDriver driver) {
+					return driver.findElement(elementIdentifier);
+				}
+			});
+		}catch(NoSuchElementException | StaleElementReferenceException | TimeoutException e){
+		    Log.info("Error: Element is not visible.");
+		    }
+
+		return element;
 	}
 
 	public Boolean isElementPresent(By targetElement) throws InterruptedException{

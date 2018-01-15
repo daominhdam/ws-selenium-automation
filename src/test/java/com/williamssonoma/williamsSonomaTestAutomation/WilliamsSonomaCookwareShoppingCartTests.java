@@ -1,6 +1,5 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
-import com.relevantcodes.extentreports.LogStatus;
 import com.williamssonoma.williamsSonomaPages.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Reporter;
@@ -13,17 +12,14 @@ public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 
 	@Test ()
     public void verifyProductSavedForLater() throws InterruptedException {
-		test.log(LogStatus.INFO, "Launching Williams Sonoma Main Page");
-		Reporter.log("Launching Williams Sonoma Main Page");
+	    Reporter.log("Launching Williams Sonoma Main Page");
 		WilliamsSonomaMainPage williamsSonomaMainPage= new WilliamsSonomaMainPage(driver);
 		williamsSonomaMainPage.launchPage();
 
-		test.log(LogStatus.INFO, "Clicking on Cookware link from the Menu");
 		Reporter.log("Clicking on Cookware link from the Menu");
 		williamsSonomaMainPage.scrollIntoView(williamsSonomaMainPage.linkCookware);
 		williamsSonomaMainPage.clickProductLinkFromMenu("Cookware");
 
-		test.log(LogStatus.INFO, "Navigating to Cookware Page");
 		Reporter.log("Navigating to Cookware Page");
 		WilliamsSonomaCookwarePotsAnsPansPage williamsSonomaCookwarePage= new WilliamsSonomaCookwarePotsAnsPansPage(driver);
 		williamsSonomaCookwarePage.waitForPageToLoad();
@@ -50,11 +46,9 @@ public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.buttonShoppingCartLocator);
 		((JavascriptExecutor)driver).executeScript("window.scrollBy(900,600)", "");
 		//brevilleOneTouchTeaMakerPage.clickOnElementUsingAction(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
-		brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
+		//brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.buttonShoppingCart);
          brevilleOneTouchTeaMakerPage.buttonShoppingCart.click();
-
-		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.widgetConfirmationOverlayLocator);
-		brevilleOneTouchTeaMakerPage.scrollIntoViewElementUsingJs(brevilleOneTouchTeaMakerPage.widgetCheckoutConfirmationOverlay.buttonCheckout);
+         Thread.sleep(30000);
 
 		Reporter.log("Clicking on Checkout button on the confirmation overlay widget");
 		brevilleOneTouchTeaMakerPage.widgetCheckoutConfirmationOverlay.buttonCheckout.click();

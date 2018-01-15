@@ -1,6 +1,6 @@
 package com.williamssonoma.automationCore.retryAnalyzer;
 
-import com.relevantcodes.extentreports.LogStatus;
+import com.aventstack.extentreports.Status;
 import com.williamssonoma.automationCore.extentReport.ExtentTestManager;
 import com.williamssonoma.williamsSonomaTestAutomation.BaseTestCase;
 import org.openqa.selenium.OutputType;
@@ -8,6 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.*;
 
+import java.io.IOException;
 
 
 public class RetryAnalyzer implements IRetryAnalyzer{
@@ -33,8 +34,12 @@ public class RetryAnalyzer implements IRetryAnalyzer{
 		Object testClass = iTestResult.getInstance();
 		WebDriver webDriver = ((BaseTestCase) testClass).getDriver();
 		String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).getScreenshotAs(OutputType.BASE64);
-		ExtentTestManager.getTest().log(LogStatus.FAIL,"Test Failed",
-				ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
+		try {
+			ExtentTestManager.getTest().log(Status.FAIL,"Test Failed"+
+                    ExtentTestManager.getTest().addScreenCaptureFromPath(base64Screenshot));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

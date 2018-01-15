@@ -224,6 +224,7 @@ public class CreateBrowser {
         java.awt.Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension dim = new Dimension((int) screenSize.getWidth(), (int) screenSize.getHeight());
         driver.manage().window().setSize(dim);
+		driver.manage().deleteAllCookies();
 	}
 
 }

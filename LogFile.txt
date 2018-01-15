@@ -133,3 +133,96 @@
 14 Jan 2018 04:45:58  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
 14 Jan 2018 04:45:58  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 14 Jan 2018 04:45:58  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 12:31:28  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 12:31:29  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 12:31:29  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 12:31:53  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 12:31:53  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+14 Jan 2018 12:31:53  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 12:31:53  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 19:52:47  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 19:52:48  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 19:52:48  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 19:53:23  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 19:53:23  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+14 Jan 2018 19:53:23  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 19:53:23  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 20:49:54  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 20:49:55  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 20:49:55  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 20:50:21  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 20:50:21  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+14 Jan 2018 20:50:21  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 20:50:21  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 22:35:35  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 22:35:36  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 22:35:36  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 22:40:39  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 22:40:40  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 22:40:40  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+14 Jan 2018 22:41:00  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+14 Jan 2018 22:41:00  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+14 Jan 2018 22:41:00  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+14 Jan 2018 22:41:00  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 00:25:54  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+15 Jan 2018 00:25:54  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 00:25:54  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 00:26:19  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 00:26:19  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 00:45:35  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 00:45:36  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 00:45:36  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 00:45:58  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 00:45:58  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 00:48:10  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 00:48:11  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 00:48:11  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 00:48:34  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 00:48:34  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:03:06  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:03:07  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:03:07  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:03:37  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:03:37  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+15 Jan 2018 01:03:37  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:03:37  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:38:29  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:38:29  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+15 Jan 2018 01:38:29  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:38:30  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:39:02  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:39:02  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+15 Jan 2018 01:39:02  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:39:03  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:49:47  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:49:49  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:49:49  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:50:13  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:50:13  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+15 Jan 2018 01:50:13  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:50:13  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 01:59:21  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 01:59:23  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 01:59:23  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 02:11:02  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 02:11:03  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 02:11:03  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 02:19:19  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 02:19:19  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 02:19:19  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 02:33:39  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 02:33:41  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 02:33:41  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 02:34:34  INFO logger - Error: Element is not visible.
+15 Jan 2018 02:38:40  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 02:38:41  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 02:38:41  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 02:42:31  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 02:42:31  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 02:42:31  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 03:08:29  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 03:08:31  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 03:08:32  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 11:14:08  INFO logger - The 'JoinEmailList' popup overlay widget is not displayed 
+15 Jan 2018 11:14:08  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 11:14:08  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)

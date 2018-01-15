@@ -60,10 +60,7 @@ public class WilliamsSonomaCookwarePotsAnsPansPage extends BaseTestPage{
 		}
 	}
 
-	public void waitForPageToLoad(){
-		waitForElementToBeVisible(By.xpath("//h1[text()='Cookware']"));
-		waitForElementToBeVisible(By.xpath("//div[@class='left-nav-cat-heading'][text()='Shop by Category']"));
-	}
+
 
 
 
