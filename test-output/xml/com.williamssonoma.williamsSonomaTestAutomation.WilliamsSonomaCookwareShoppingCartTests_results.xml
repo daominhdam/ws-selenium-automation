@@ -4,14 +4,14 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="91.206">
+           time="50.498">
   <properties />
-            <testcase name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]" time="91.206" classname="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests">
+            <testcase name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]" time="50.498" classname="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests">
                 <failure type="java.lang.NullPointerException"
                   message="(null)"
               >
 <![CDATA[java.lang.NullPointerException
-  com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests.verifyProductSavedForLater(WilliamsSonomaCookwareShoppingCartTests.java:54)
+  com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests.verifyProductSavedForLater(WilliamsSonomaCookwareShoppingCartTests.java:62)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

@@ -17,6 +17,9 @@
       <![CDATA[Navigating to Tea Kettles Page]]>
     </line>
     <line>
+      <![CDATA[Tea Kettle page header is displayed]]>
+    </line>
+    <line>
       <![CDATA[Clicking on a Tea Kettle Product from the Tea Kettles page]]>
     </line>
     <line>
@@ -29,27 +32,27 @@
       <![CDATA[Clicking on Checkout button on the confirmation overlay widget]]>
     </line>
     <line>
-      <![CDATA[<a href='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_15_01_2018_04_55_10.png'> <img src='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_15_01_2018_04_55_10.png' height='100' width='100'/>screenshot </a>]]>
+      <![CDATA[<a href='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_16_01_2018_02_51_51.png'> <img src='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_16_01_2018_02_51_51.png' height='100' width='100'/>screenshot </a>]]>
     </line>
   </reporter-output>
-  <suite name="Regression Suite" duration-ms="59244" started-at="2018-01-16T00:54:14Z" finished-at="2018-01-16T00:55:13Z">
+  <suite name="Regression Suite" duration-ms="53970" started-at="2018-01-16T10:50:59Z" finished-at="2018-01-16T10:51:53Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="59244" started-at="2018-01-16T00:54:14Z" finished-at="2018-01-16T00:55:13Z">
+    <test name="Test" duration-ms="53970" started-at="2018-01-16T10:50:59Z" finished-at="2018-01-16T10:51:53Z">
       <class name="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeSuite" is-config="true" duration-ms="11" started-at="2018-01-15T16:54:14Z" finished-at="2018-01-15T16:54:14Z">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeSuite" is-config="true" duration-ms="8" started-at="2018-01-16T02:50:59Z" finished-at="2018-01-16T02:50:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeTest" is-config="true" duration-ms="4868" started-at="2018-01-15T16:54:14Z" finished-at="2018-01-15T16:54:18Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeTest" is-config="true" duration-ms="4805" started-at="2018-01-16T02:50:59Z" finished-at="2018-01-16T02:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeClass" is-config="true" duration-ms="158" started-at="2018-01-15T16:54:18Z" finished-at="2018-01-15T16:54:19Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeClass" is-config="true" duration-ms="144" started-at="2018-01-16T02:51:04Z" finished-at="2018-01-16T02:51:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-01-15T16:54:19Z" finished-at="2018-01-15T16:54:19Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-01-16T02:51:04Z" finished-at="2018-01-16T02:51:04Z">
           <params>
             <param index="0">
               <value>
@@ -60,11 +63,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyProductSavedForLater()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="verifyProductSavedForLater" duration-ms="51242" started-at="2018-01-15T16:54:19Z" finished-at="2018-01-15T16:55:10Z">
+        <test-method status="FAIL" signature="verifyProductSavedForLater()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="verifyProductSavedForLater" duration-ms="46326" started-at="2018-01-16T02:51:04Z" finished-at="2018-01-16T02:51:51Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests.verifyProductSavedForLater(WilliamsSonomaCookwareShoppingCartTests.java:64)
+	at com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests.verifyProductSavedForLater(WilliamsSonomaCookwareShoppingCartTests.java:62)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,6 +115,9 @@
               <![CDATA[Navigating to Tea Kettles Page]]>
             </line>
             <line>
+              <![CDATA[Tea Kettle page header is displayed]]>
+            </line>
+            <line>
               <![CDATA[Clicking on a Tea Kettle Product from the Tea Kettles page]]>
             </line>
             <line>
@@ -125,7 +131,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyProductSavedForLater -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="1241" started-at="2018-01-15T16:55:10Z" finished-at="2018-01-15T16:55:11Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="afterMethod" is-config="true" duration-ms="1191" started-at="2018-01-16T02:51:51Z" finished-at="2018-01-16T02:51:52Z">
           <params>
             <param index="0">
               <value>
@@ -135,19 +141,19 @@
           </params>
           <reporter-output>
             <line>
-              <![CDATA[<a href='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_15_01_2018_04_55_10.png'> <img src='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_15_01_2018_04_55_10.png' height='100' width='100'/>screenshot </a>]]>
+              <![CDATA[<a href='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_16_01_2018_02_51_51.png'> <img src='C:\Users\Riya\eclipse-workspace\williams-sonoma-selenium-automation\ws-selenium-automation\screenshots\failure_screenshots\verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_16_01_2018_02_51_51.png' height='100' width='100'/>screenshot </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="afterClass" is-config="true" duration-ms="1712" started-at="2018-01-15T16:55:11Z" finished-at="2018-01-15T16:55:13Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="afterClass" is-config="true" duration-ms="1473" started-at="2018-01-16T02:51:52Z" finished-at="2018-01-16T02:51:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="teardown" is-config="true" duration-ms="0" started-at="2018-01-15T16:55:13Z" finished-at="2018-01-15T16:55:13Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="teardown" is-config="true" duration-ms="1" started-at="2018-01-16T02:51:53Z" finished-at="2018-01-16T02:51:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-01-15T16:55:13Z" finished-at="2018-01-15T16:55:13Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:[WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]]" name="afterSuite" is-config="true" duration-ms="0" started-at="2018-01-16T02:51:53Z" finished-at="2018-01-16T02:51:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

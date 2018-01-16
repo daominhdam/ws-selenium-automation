@@ -247,3 +247,19 @@
 15 Jan 2018 16:54:24  INFO logger - Closing the 'JoinEmailList' popup overlay widget
 15 Jan 2018 16:54:24  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
 15 Jan 2018 16:54:24  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 17:18:34  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 17:18:35  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 17:18:35  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 19:23:51  INFO logger - Error: Element is not visible.
+15 Jan 2018 19:24:00  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 19:24:00  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 19:24:00  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 21:35:47  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 21:35:47  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 21:35:47  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+15 Jan 2018 21:37:45  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+15 Jan 2018 21:37:45  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+15 Jan 2018 21:37:45  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+16 Jan 2018 02:51:10  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+16 Jan 2018 02:51:10  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+16 Jan 2018 02:51:10  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)

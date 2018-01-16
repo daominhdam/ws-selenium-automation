@@ -6,7 +6,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import static com.williamssonoma.automationCore.util.verificationServices.Verifications.verifyTrue;
+import static com.williamssonoma.automationCore.util.verificationServices.Verifications.*;
 
 public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 	

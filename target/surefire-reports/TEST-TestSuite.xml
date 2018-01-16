@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="51.25" tests="1" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="46.346" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2017.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -61,24 +61,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]" classname="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests" time="51.25">
+  <testcase name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]" classname="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests" time="46.346">
     <failure type="java.lang.NullPointerException:">java.lang.NullPointerException: null
-	at com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests.verifyProductSavedForLater(WilliamsSonomaCookwareShoppingCartTests.java:64)
+	at com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests.verifyProductSavedForLater(WilliamsSonomaCookwareShoppingCartTests.java:62)
 </failure>
-    <system-out><![CDATA[15 Jan 2018 16:54:24  INFO logger - Closing the 'JoinEmailList' popup overlay widget
-15 Jan 2018 16:54:24  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-15 Jan 2018 16:54:24  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
+    <system-out><![CDATA[16 Jan 2018 02:51:10  INFO logger - Closing the 'JoinEmailList' popup overlay widget
+16 Jan 2018 02:51:10  INFO logger - Executing javascript: '{}'return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+16 Jan 2018 02:51:10  INFO logger - Executing javascript: '{}'window.scrollTo(0, 0)
 Navigating to: https://www.williams-sonoma.com/shop/cookware/?cm_type=gnav
 Navigating to: https://www.williams-sonoma.com/shop/electrics/electrics-teakettles//?cm_type=lnav
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 23132
+Starting ChromeDriver 2.33.506120 (e3e53437346286c0bc2d2dc9aa4915ba81d9023f) on port 21686
 Only local connections are allowed.
-Jan 15, 2018 4:54:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 16, 2018 2:51:01 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
-Jan 15, 2018 4:54:17 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jan 16, 2018 2:51:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 ]]></system-err>
   </testcase>
