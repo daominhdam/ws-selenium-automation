@@ -24,9 +24,11 @@ public class ExtentManager {
 /*			if (System.getenv("ExtentX").equalsIgnoreCase("true")) {
         extent.attachReporter(getExtentXReporter());
 			}*/
-			extent.setSystemInfo("Selenium Java Version", "2.53.0");
-			extent.setSystemInfo("Environment", "Prod");
-			extent.setSystemInfo("AppiumVersion", "4.0.0");
+			extent.setSystemInfo("Operating System", "Windows 10");
+			extent.setSystemInfo("Java Version", "1.8.0_151");
+			extent.setSystemInfo("Environment", "QA");
+			extent.setSystemInfo("SeleniumVersion", "3.0.0");
+			extent.setSystemInfo("User Name", "Kavita Jadhav");
 
 		}
 
@@ -40,10 +42,12 @@ public class ExtentManager {
 
 		// report title
 		//String documentTitle = prop.getProperty("documentTitle", "aventstack - Extent");
-		htmlReporter.config().setDocumentTitle("WSSeleniumTestReport");
-		htmlReporter.config().setReportName("ExtentReports");
-		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
-		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setDocumentTitle("WSAutomationTestReport");
+		htmlReporter.config().setReportName("WSAutomationTestReport");
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+		htmlReporter.config().setTheme(Theme.DARK);
+
+		//htmlReporter.loadXMLConfig("extent-config.xml");
 		return htmlReporter;
 	}
 

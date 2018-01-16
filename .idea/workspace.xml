@@ -5,30 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53be33a2-e0f6-4035-bfcb-8547271a5e6e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_relevantcodes_extentreports_2_41_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_sqlite_jdbc_3_8_11_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/ExtentReporterNG.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/TestListener.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/TestListenerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Extent.html" afterPath="$PROJECT_DIR$/Extent.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogFile.txt" afterPath="$PROJECT_DIR$/LogFile.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationBaseClasses/CreateBrowser.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationBaseClasses/CreateBrowser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentTestManager.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentTestManager.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/GetScreenShot.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/GetScreenShot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/BaseTestPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/BaseTestPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/WilliamsSonomaCookwarePotsAnsPansPage.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/WilliamsSonomaCookwarePotsAnsPansPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/html/output.html" afterPath="$PROJECT_DIR$/test-output/html/output.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/html/overview.html" afterPath="$PROJECT_DIR$/test-output/html/overview.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" afterPath="$PROJECT_DIR$/test-output/html/suite1_test1_results.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/xml/com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests_results.xml" afterPath="$PROJECT_DIR$/test-output/xml/com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests_results.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/williamsSonomaSeleniumAutomation.iml" afterPath="$PROJECT_DIR$/williamsSonomaSeleniumAutomation.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,11 +28,11 @@
   <component name="ExportTestResults" outputFolder="$PROJECT_DIR$/test-output" userTempatePath="" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WilliamsSonomaCookwareShoppingCartTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WilliamsSonomaCookwareShoppingCartTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+            <state relative-caret-position="201">
+              <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,16 +40,72 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseTestCase.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java">
+      <file leaf-file-name="MyTestListenerAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/MyTestListenerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="281">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1186#1198#0" expanded="true" />
-                <element signature="e#1256#1268#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RetryAnalyzer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtentManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseTestCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="111" column="27" lean-forward="false" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1309#1321#0" expanded="true" />
+                <element signature="e#1384#1396#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtentTestManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentTestManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1706">
+              <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,56 +132,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestListenerAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/TestListenerAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifyProductSavedForLater_14_01_2018_12_32_03.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshots/failure_screenshots/verifyProductSavedForLater_14_01_2018_12_32_03.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_14_01_2018_02_25_23.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshots/failure_screenshots_reportng/verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]_14_01_2018_02_25_23.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GetScreenShot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/GetScreenShot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="272">
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseTestPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/BaseTestPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1887">
-              <caret line="139" column="16" lean-forward="false" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="verifyProductSavedForLater_14_01_2018_04_46_08.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/screenshots/failure_screenshots_reportng/verifyProductSavedForLater_14_01_2018_04_46_08.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -172,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/test/java/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationBaseClasses/BrowserDriver.java" />
         <option value="$PROJECT_DIR$/src/test/java/Logger/Log.java" />
@@ -210,19 +204,20 @@
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/AnnotationTransformer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/ScreenshotListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/reportngUtil/CustomReportNgUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/GetScreenShot.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentTestManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/ExtentReporterNG.java" />
         <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/WilliamsSonomaCookwarePotsAnsPansPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/BaseTestPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/listeners/TestListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationBaseClasses/CreateBrowser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/MyTestListenerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/GetScreenShot.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java" />
       </list>
     </option>
   </component>
@@ -467,17 +462,6 @@
               <item name="ws-selenium-automation" type="b2602c69:ProjectViewProjectNode" />
               <item name="ws-selenium-automation" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ws-selenium-automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ws-selenium-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ws-selenium-automation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ws-selenium-automation" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -870,7 +854,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515934283739</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated Framework and Test scripts">
+      <created>1516044236639</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516044236639</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -929,7 +920,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21303074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21303074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -994,27 +985,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java</url>
-          <line>48</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/START_NODE_CH30_FF30_IE11_WINDOWS.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/START_NODE_CH39_FF35_IE10_WINDOWS.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1174,29 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentTestManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#317#329#0" expanded="false" />
-            <element signature="e#454#455#0" expanded="false" />
-            <element signature="e#493#494#0" expanded="false" />
-            <element signature="e#1133#1134#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1220,16 +1172,6 @@
         <state relative-caret-position="391">
           <caret line="23" column="58" lean-forward="false" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,16 +1263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="37" column="35" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaPages/WilliamsSonomaBrevilleOneTouchTeaMakerPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1367,17 +1299,7 @@
         <state relative-caret-position="425">
           <caret line="27" column="32" lean-forward="false" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1400,22 +1322,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/MyTestListenerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/util/GetScreenShot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="272">
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentTestManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1706">
+          <caret line="185" column="0" lean-forward="false" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="76">
+          <caret line="111" column="27" lean-forward="false" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1186#1198#0" expanded="true" />
-            <element signature="e#1256#1268#0" expanded="true" />
+            <element signature="e#1309#1321#0" expanded="true" />
+            <element signature="e#1384#1396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="57" column="7" lean-forward="false" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
