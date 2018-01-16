@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="53be33a2-e0f6-4035-bfcb-8547271a5e6e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogFile.txt" afterPath="$PROJECT_DIR$/LogFile.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/extentReport/ExtentManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/automationCore/retryAnalyzer/RetryAnalyzer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/BaseTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/williamssonoma/williamsSonomaTestAutomation/WilliamsSonomaCookwareShoppingCartTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -861,7 +856,14 @@
       <option name="project" value="LOCAL" />
       <updated>1516044236639</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Updated Framework and Test scripts">
+      <created>1516065033016</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1516065033016</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
