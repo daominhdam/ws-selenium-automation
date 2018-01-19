@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="50.498">
+           time="50.140">
   <properties />
-            <testcase name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]" time="50.498" classname="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests">
+            <testcase name="verifyProductSavedForLater on [WilliamsSonomaCookwareShoppingCartTests passed=0 failed=0 skipped=0]" time="50.140" classname="com.williamssonoma.williamsSonomaTestAutomation.WilliamsSonomaCookwareShoppingCartTests">
                 <failure type="java.lang.NullPointerException"
                   message="(null)"
               >

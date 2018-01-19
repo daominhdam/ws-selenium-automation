@@ -1,6 +1,7 @@
 package com.williamssonoma.williamsSonomaTestAutomation;
 
 import com.aventstack.extentreports.Status;
+import com.williamssonoma.automationCore.util.waitServices.Wait;
 import com.williamssonoma.williamsSonomaPages.*;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Reporter;
@@ -55,11 +56,12 @@ public class  WilliamsSonomaCookwareShoppingCartTests extends BaseTestCase {
 		brevilleOneTouchTeaMakerPage.waitForElementToBeVisible(brevilleOneTouchTeaMakerPage.buttonShoppingCartLocator);
 		((JavascriptExecutor)driver).executeScript("window.scrollBy(900,600)", "");
 	    brevilleOneTouchTeaMakerPage.buttonShoppingCart.click();
-        Thread.sleep(30000);
+		Wait.untilElementAppears(brevilleOneTouchTeaMakerPage.widgetConfirmationOverlay);
+
 
 		test.log(Status.INFO,"Clicking on Checkout button on the confirmation overlay widget");
 		Reporter.log("Clicking on Checkout button on the confirmation overlay widget");
-		brevilleOneTouchTeaMakerPage.widgetCheckoutConfirmationOverlay.buttonCheckout.click();
+		brevilleOneTouchTeaMakerPage.getWidgetCheckoutConfirmationOverlay().getButtonCheckout().click();
 		WilliamsSonomaShoppingCartPage shoppingCartPage= new WilliamsSonomaShoppingCartPage(driver);
 		shoppingCartPage.waitForPageToLoad();
 		verifyTrue(shoppingCartPage.getProductsListFromShoppingCartTable().contains("Breville One-Touch Tea Maker"),"Expected productName is displayed in the shopping cart");

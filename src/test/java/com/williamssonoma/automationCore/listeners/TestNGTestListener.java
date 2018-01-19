@@ -34,29 +34,13 @@ public class TestNGTestListener extends TestListenerAdapter {
     }
 
     @Override
-    public void onTestFailure(ITestResult result) {
-    if (result != null) {
-        System.setProperty("org.uncommons.reportng.escape-output", "false");
-        Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
-        String methodName = result.getName();
-        driver = getCurrentDriver();
-        if (!result.isSuccess()) {
-            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            try {
-                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/screenshots";
-                File destFile = new File((String) reportDirectory + "/failure_screenshots/" + methodName + "_" + formater.format(calendar.getTime()) + ".png");
-                FileUtils.copyFile(scrFile, destFile);
-                String srcUrl = driver.getCurrentUrl();
-                   /* JavascriptExecutor js = (JavascriptExecutor) driver;
-                    String srcUrl=js.executeScript("return window.location.href").toString();*/
-                Screenshot screenshot = new Screenshot(destFile, srcUrl);
-                result.setAttribute(Screenshot.KEY, screenshot);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+    public void onTestSuccess(ITestResult result) {
+        super.onTestSuccess(result);
+        Log.info("test " + result.getTestClass().getTestName() + "-->"+ result.getMethod().getMethodName() + " succeeded ");
     }
+
+    @Override
+    public void onTestFailure(ITestResult result) {
        /* System.setProperty("org.uncommons.reportng.escape-output", "false");
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");

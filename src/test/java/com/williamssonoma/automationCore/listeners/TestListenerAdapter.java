@@ -28,7 +28,7 @@ import static com.williamssonoma.automationBaseClasses.BrowserDriver.getCurrentD
 public class TestListenerAdapter extends HTMLReporter implements ITestListener, IConfigurationListener
 {
     protected static final CustomReportNgUtils REPORT_NG_UTILS = new CustomReportNgUtils();
-    WebDriver driver=null;
+    WebDriver driver;
 
     @Override
     protected VelocityContext createContext()
@@ -55,11 +55,12 @@ public class TestListenerAdapter extends HTMLReporter implements ITestListener, 
     @Override
     public void onTestFailure(ITestResult result) {
         if (result != null) {
-            System.setProperty("org.uncommons.reportng.escape-output", "false");
+            //System.setProperty("org.uncommons.reportng.escape-output", "false");
             Calendar calendar = Calendar.getInstance();
             SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
             String methodName = result.getName();
-            driver= getCurrentDriver();
+            Object testClass = result.getInstance();
+            WebDriver webDriver = ((BaseTestCase) testClass).getDriver();
             if (!result.isSuccess()) {
                 File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
                 try {

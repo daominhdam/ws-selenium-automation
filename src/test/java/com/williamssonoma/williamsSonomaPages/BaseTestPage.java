@@ -1,7 +1,6 @@
 package com.williamssonoma.williamsSonomaPages;
 
 import Logger.Log;
-import com.google.common.base.Function;
 import com.williamssonoma.automationCore.util.verificationServices.Verifications;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
@@ -9,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
 import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import static java.lang.String.format;
 
@@ -21,14 +21,6 @@ public class BaseTestPage extends Verifications{
 	wait = new WebDriverWait(driver, 10); 
 	} 
 
-	public static WebElement find(String locator)
-	{ 
-	return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))); 
-	} 
-
-	public static void clickElement(String locator) {
-		find(locator).click();
-	}
 
 	public static String getPageTitle() {
 		return driver.getTitle();
@@ -36,20 +28,6 @@ public class BaseTestPage extends Verifications{
 
 	public static void open(String url) {
 		driver.get(url);
-	}
-
-	public static void typeText(String locator, String keyword)
-	{ 
-	find(locator).sendKeys(keyword); 
-	} 
-
-	public static String getValue(String locator) {
-		return find(locator).getText();
-	}
-
-	public static Boolean isDisplayed(String locator)
-	{
-		return find(locator).isDisplayed();
 	}
 
 	public WebElement waitForElementToBeVisible(final By elementIdentifier) {
@@ -95,7 +73,7 @@ public class BaseTestPage extends Verifications{
 	}
 
 
-
+/*
 	public boolean isAlertPresent(){
 		try	{
 			WebDriverWait wait = new WebDriverWait(driver, 30);
@@ -106,7 +84,7 @@ public class BaseTestPage extends Verifications{
 		catch (NoAlertPresentException e){
 			throw new NoAlertPresentException();
 		}
-	}
+	}*/
 
 	public static void clickWebElement(WebElement weElement, WebDriver wdDriver) {
 

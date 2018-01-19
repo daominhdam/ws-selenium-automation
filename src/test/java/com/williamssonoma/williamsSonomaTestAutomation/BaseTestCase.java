@@ -129,7 +129,7 @@ public class BaseTestCase  extends TestListenerAdapter {
 
 	@AfterSuite
 	public void afterSuite() {
-		driver.quit();
+		//driver.quit();
 	}
 
 	}

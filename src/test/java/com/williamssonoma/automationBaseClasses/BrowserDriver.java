@@ -57,17 +57,19 @@ public class BrowserDriver {
         loadPage(url);
     }
 
-    public static WebElement waitForElement(WebElement elementToWaitFor) {
+ /*   public static WebElement waitForElement(WebElement elementToWaitFor) {
         return waitForElement(elementToWaitFor, null);
-    }
+    }*/
 
-    public static WebElement waitForElement(WebElement elementToWaitFor, Integer waitTimeInSeconds) {
+ /*   public static WebElement waitForElement(WebElement elementToWaitFor, Integer waitTimeInSeconds) {
         if (waitTimeInSeconds == null) {
             waitTimeInSeconds = 10;
         }
 
         WebDriverWait wait = new WebDriverWait(getCurrentDriver(), waitTimeInSeconds);
         return wait.until(ExpectedConditions.visibilityOf(elementToWaitFor));
-    }
+        }
+
+        */
 
 }
