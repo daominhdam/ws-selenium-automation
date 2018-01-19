@@ -9,12 +9,29 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import Logger.Log;
 
 import static com.williamssonoma.automationBaseClasses.BrowserDriver.getCurrentDriver;
 
-public class ScreenshotListener extends TestListenerAdapter {
+public class TestNGTestListener extends TestListenerAdapter {
 
     WebDriver driver=null;
+
+
+    @Override
+    public void onStart(ITestContext testContext) {
+        super.onStart(testContext);
+        if (testContext.getAllTestMethods().length > 0) {
+            Log.info(testContext.getAllTestMethods()[0]
+                    .getRealClass().getSimpleName() + " start");
+        }
+
+    }
+    @Override
+    public void onTestStart(ITestResult result) {
+        super.onTestStart(result);
+        Reporter.setCurrentTestResult(result);
+    }
 
     @Override
     public void onTestFailure(ITestResult result) {
