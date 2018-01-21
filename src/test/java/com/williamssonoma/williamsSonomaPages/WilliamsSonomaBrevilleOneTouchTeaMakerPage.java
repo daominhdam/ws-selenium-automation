@@ -2,6 +2,7 @@ package com.williamssonoma.williamsSonomaPages;
 
 import com.williamssonoma.automationCore.webElements.WSWebElement;
 import com.williamssonoma.automationCore.webElements.element.HtmlElement;
+import com.williamssonoma.automationCore.webElements.loader.HtmlElementLoader;
 import com.williamssonoma.automationCore.webElements.loader.decorator.HtmlElementDecorator;
 import com.williamssonoma.automationCore.webElements.loader.decorator.HtmlElementLocatorFactory;
 import com.williamssonoma.williamsSonomaPages.WilliamsSonomaCommonPageComponents.WilliamsSonomaCheckoutConfirmationOverlayWidget;
@@ -15,8 +16,7 @@ public class WilliamsSonomaBrevilleOneTouchTeaMakerPage extends BaseTestPage{
 	
 	public WilliamsSonomaBrevilleOneTouchTeaMakerPage(WebDriver driver){
 		super(driver);
-		PageFactory.initElements(new HtmlElementDecorator(new HtmlElementLocatorFactory(driver)), this);
-
+		HtmlElementLoader.populatePageObject(this, driver);
 	}
 
 	@FindBy(xpath="//h1[text()='Breville One-Touch Tea Maker']")
@@ -34,7 +34,7 @@ public class WilliamsSonomaBrevilleOneTouchTeaMakerPage extends BaseTestPage{
     public By widgetConfirmationOverlayLocator = By.xpath("//div[@id='racOverlay']\"");
 
     @FindBy(xpath="//div[@id='racOverlay']")
-    private WilliamsSonomaCheckoutConfirmationOverlayWidget widgetCheckoutConfirmationOverlay;
+    public WilliamsSonomaCheckoutConfirmationOverlayWidget widgetCheckoutConfirmationOverlay;
 
     public WilliamsSonomaCheckoutConfirmationOverlayWidget getWidgetCheckoutConfirmationOverlay(){
     	return widgetCheckoutConfirmationOverlay;

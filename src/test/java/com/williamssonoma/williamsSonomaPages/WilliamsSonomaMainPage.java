@@ -2,6 +2,9 @@ package com.williamssonoma.williamsSonomaPages;
 
 import Logger.Log;
 import com.williamssonoma.automationCore.util.LoadProperties;
+import com.williamssonoma.automationCore.webElements.loader.HtmlElementLoader;
+import com.williamssonoma.automationCore.webElements.loader.decorator.HtmlElementDecorator;
+import com.williamssonoma.automationCore.webElements.loader.decorator.HtmlElementLocatorFactory;
 import com.williamssonoma.williamsSonomaPages.WilliamsSonomaCommonPageComponents.PopupOverlayJoinEmailListWidgetComponent;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
@@ -10,11 +13,10 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.List;
 
 public class WilliamsSonomaMainPage extends BaseTestPage{
-	public WilliamsSonomaMainPage(WebDriver driver){
-		super(driver);
-		PageFactory.initElements(driver, this);
+	public WilliamsSonomaMainPage(WebDriver driver) {
+        this.driver=driver;
+		HtmlElementLoader.populatePageObject(this, driver);
 	}
-
 
 	@FindBy(xpath="//section[@id='sub-brand-bar-container']")
 	List<WebElement> menuSubBrandBarContainer;

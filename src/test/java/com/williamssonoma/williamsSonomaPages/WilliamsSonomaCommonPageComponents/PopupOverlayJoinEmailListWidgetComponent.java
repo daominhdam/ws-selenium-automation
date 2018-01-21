@@ -4,10 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class PopupOverlayJoinEmailListWidgetComponent  {
-    public PopupOverlayJoinEmailListWidgetComponent(){
-
-    }
-
     @FindBy(xpath="//a[contains(@class, 'stickyOverlayMinimizeButton')]")
     private WebElement buttonStickyOverlayMinimize ;
 

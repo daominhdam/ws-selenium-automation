@@ -10,9 +10,6 @@ import java.util.List;
  * Actually this class wraps {@code WebDriver} {@link org.openqa.selenium.support.ui.Select} and delegates
  * all method calls to it. But unlike {@code WebDriver} {@code Select} class there are no checks performed
  * in the constructor of this class, so it can be used correctly with lazy initialization mechanism.
- *
- * @author Artem Koshelev artkoshelev@yandex-team.ru
- * @author Alexander Tolmachev starlight@yandex-team.ru
  */
 public class Select extends TypifiedElement {
     /**

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -28,10 +29,10 @@ public class WilliamsSonomaShoppingCartPage extends BaseTestPage{
 	public WebElement headerCartTableRowTitle;
 
 	public List<String> getProductsListFromShoppingCartTable(){
-		List<String> productNamesList=null;
+		List<String> productNamesList=new ArrayList<String>();
 		for (WebElement row : shoppingCartTableRows)
 		{
-			String productName= row.findElement(By.className("cart-table-row-title")).getText();
+			String productName= row.findElement(By.xpath("//div[@class='cart-table-row-title']")).getText();
 			productNamesList.add(productName);
 		}
 		System.out.println("Product List in Shopping Cart: "+productNamesList);

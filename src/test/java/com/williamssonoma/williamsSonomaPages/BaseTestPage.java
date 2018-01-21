@@ -2,6 +2,8 @@ package com.williamssonoma.williamsSonomaPages;
 
 import Logger.Log;
 import com.williamssonoma.automationCore.util.verificationServices.Verifications;
+import com.williamssonoma.automationCore.webElements.loader.HtmlElementLoader;
+import com.williamssonoma.automationCore.webElements.pagefactory.CustomElementLocatorFactory;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
@@ -11,16 +13,31 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 import static java.lang.String.format;
+import static org.mockito.Mockito.mock;
 
-public class BaseTestPage extends Verifications{
+public class  BaseTestPage extends Verifications{
 	public static WebDriverWait wait;
 	public static WebDriver driver;
 
-	public BaseTestPage(WebDriver driver) 	{ 
+	/*public BaseTestPage(WebDriver driver) 	{
 	this.driver = driver; 
 	wait = new WebDriverWait(driver, 10); 
-	} 
+	}*/
+	public BaseTestPage() {
+		this(mockDriver());
+	}
 
+	public BaseTestPage(WebDriver driver) {
+
+		HtmlElementLoader.populatePageObject(this, driver);
+	}
+
+	public static WebDriver mockDriver() {
+		return mock(WebDriver.class);
+	}
+	public BaseTestPage(CustomElementLocatorFactory elementLocatorFactory) {
+		HtmlElementLoader.populatePageObject(this, elementLocatorFactory);
+	}
 
 	public static String getPageTitle() {
 		return driver.getTitle();

@@ -13,9 +13,6 @@ import static java.util.stream.Collectors.toMap;
 
 /**
  * Represents web page table element. Provides convenient ways of retrieving data stored in it.
- *
- * @author Alexander Tolmachev starlight@yandex-team.ru
- *         Date: 11.03.13
  */
 public class Table extends TypifiedElement {
     /**
